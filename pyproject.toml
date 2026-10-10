@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hallo-eltern-cli"
+version = "0.1.0"
+description = "Read-only CLI for hallo! Eltern messages and attachments"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+hallo-eltern = "hallo_eltern.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["hallo_eltern*"]
